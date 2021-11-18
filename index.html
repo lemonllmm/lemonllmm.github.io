@@ -48,8 +48,10 @@
 			<img src="/img/fa.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/"></a></h1>
+		  <h1 class="header-author"><a href="/">柠檬供货商</a></h1>
 		</hgroup>
+		
+		<p class="header-subtitle">没有柠檬只有酸</p>
 		
 
 		<nav class="header-menu">
@@ -106,8 +108,10 @@
 				<img src="/img/fa.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author"></h1>
+			  <h1 class="header-author js-header-author">柠檬供货商</h1>
 			</hgroup>
+			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>没有柠檬只有酸<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -174,9 +178,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Node-js安装与配置"><a href="#Node-js安装与配置" class="headerlink" title="Node.js安装与配置"></a>Node.js安装与配置</h2><p>Node.js 进入官网 查找适合版本进行下载<br><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">下载地址</a></p>
-<hr>
-<h2 id="创建第一个Node-js程序"><a href="#创建第一个Node-js程序" class="headerlink" title="创建第一个Node.js程序"></a>创建第一个Node.js程序</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1 引入required 模块</span><br><span class="line">2 创建服务器</span><br><span class="line">3 接受请求与响应服务</span><br></pre></td></tr></table></figure>
+        <h2 id="Node-js概述"><a href="#Node-js概述" class="headerlink" title="Node.js概述"></a>Node.js概述</h2><p>Node.js不是一门语言 不是库 不是框架<br>Node.js  是一个javaScript运行时环境，可以解析和执行JS代码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">EcmaSript : </span><br><span class="line"> <span class="keyword">if</span> var <span class="keyword">function</span> object array 基本语法</span><br><span class="line">Bom:</span><br><span class="line">Dom:</span><br></pre></td></tr></table></figure>
+<p>Node.js 的js</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">【没有dom dom】 【文件的读写】 【网络服务的构建】【网络通信】</span><br><span class="line">Node.js 特性</span><br><span class="line">Event-driven 事件驱动</span><br><span class="line">Non-blocking  I/O model 非阻塞IO 模型（异步）</span><br><span class="line">Lightweight and efficient 轻量且高效</span><br></pre></td></tr></table></figure>
+<h2 id="Node-js安装与配置"><a href="#Node-js安装与配置" class="headerlink" title="Node.js安装与配置"></a>Node.js安装与配置</h2><p>Node.js 进入官网 查找适合版本进行下载  <a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">下载地址</a><br>在CMD可查看是否安装成功 </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">v14.17.3</span><br></pre></td></tr></table></figure>
+<p>用Node.js 执行hellowrd</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var foo = <span class="string">&#x27;bar&#x27;</span></span><br><span class="line">console.log(<span class="string">&quot;hello ! world!&quot;</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="创建第一个Node-js程序"><a href="#创建第一个Node-js程序" class="headerlink" title="创建第一个Node.js程序"></a>创建第一个Node.js程序</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Node.js 命名的时候最好不要用中文</span><br><span class="line"> 1 引入required 模块</span><br><span class="line"> 2 创建服务器</span><br><span class="line"> 3 接受请求与响应服务</span><br></pre></td></tr></table></figure>
+<p>第一个Node.js 程序<br>创建一个hello.js文件 输入以下内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">//使用require 指令来载入http 模块 ，并将实例化的HTTP 赋值给变量http </span><br><span class="line">const http =require(<span class="string">&quot;http&quot;</span>);     </span><br><span class="line"></span><br><span class="line">const  hostname = <span class="string">&quot;127.0.0.1&quot;</span>;</span><br><span class="line">const port = 3000;</span><br><span class="line"></span><br><span class="line">const server = http.createServer((req,res)=&gt;&#123;</span><br><span class="line"></span><br><span class="line"> // 发送 HTTP 头部 </span><br><span class="line"> // HTTP 状态值: 200 : OK</span><br><span class="line"> // 内容类型: text/plain</span><br><span class="line"></span><br><span class="line">	res.statusCode = 200;</span><br><span class="line">	res.setHeader(<span class="string">&quot;Content-Type&quot;</span>,<span class="string">&quot;text/plain&quot;</span>);</span><br><span class="line">//发送响应数据</span><br><span class="line">	res.end(<span class="string">&quot;Hello , World ！\n&quot;</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">server.listen(port,hostname,()=&gt;&#123;</span><br><span class="line">	console.log(<span class="string">&quot;Server running at http://<span class="variable">$&#123;hostname&#125;</span>:<span class="variable">$&#123;port&#125;</span>/&quot;</span>)</span><br><span class="line">&#125;)；</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">保存文件，返回终端窗口输入</span><br><span class="line"></span><br><span class="line">node hello.js</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">终端将会输出 </span><br><span class="line"></span><br><span class="line">Server running at http://127.0.0.1:3000</span><br><span class="line"></span><br><span class="line">打开浏览器访问网址 http://127.0.0.1:3000  如果浏览器显示字符串 Hello , World ！</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h2 id=""><a href="#" class="headerlink" title=""></a></h2>
       
@@ -238,7 +250,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/11/13/hello-world/">lemon的人间笔记</a>
+      <a class="article-title" href="/2021/11/13/hello-world/">lemon的博客搭建笔记</a>
     </h1>
   
 
@@ -257,13 +269,16 @@
 
 <h3 id="Run-server-启动自己的博客"><a href="#Run-server-启动自己的博客" class="headerlink" title="Run server 启动自己的博客"></a>Run server 启动自己的博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="将自己的博客推到远程"><a href="#将自己的博客推到远程" class="headerlink" title="将自己的博客推到远程"></a>将自己的博客推到远程</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">在github创建一个远程仓库 </span><br><span class="line">设置自己的仓库名称 （这里的仓库名称要和自己的github的账号名一样，是唯一访问地址 </span><br><span class="line">xxx是自己的github的名字</span><br><span class="line">比如 xxxx.github.io） </span><br></pre></td></tr></table></figure>
+<p>在blogs 目录下安装Git 插件<br>npm install –save hexo-deployer-git<br>打开自己blogs 文件 找到 _config.yml 更改配置<br>找到 Deployment </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/lemonllmm/lemontree.github.io.git  (自己的Github的地址)</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="将自己本地的博客部署到远端"><a href="#将自己本地的博客部署到远端" class="headerlink" title="将自己本地的博客部署到远端"></a>将自己本地的博客部署到远端</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy </span><br><span class="line">输入github账号和密码 然后就成功放在远程仓库</span><br><span class="line">可以通过Github的地址进行访问自己的博客</span><br></pre></td></tr></table></figure>
+<h3 id="美化自己的博客-这里使用的是yilia主题"><a href="#美化自己的博客-这里使用的是yilia主题" class="headerlink" title="美化自己的博客 这里使用的是yilia主题"></a>美化自己的博客 这里使用的是yilia主题</h3><hr>
+<p>安装主题</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com.litten/hexo-theme-yilia.git  themes/yilia</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<hr>
+<p>修改配置文件 _config.yml 中更改主题<br>将 themes: landscape<br>改为 themes: yilia</p>
 
       
 
